@@ -29,6 +29,7 @@ Give Claude Code a research topic and this skill walks through a structured 7-ph
 | **Awesome Virtual Cell** | Foundation models promise to simulate cells but benchmarks say otherwise. | [GitHub](https://github.com/LiudengZhang/awesome-virtual-cell) · [Site](https://liudengzhang.github.io/awesome-virtual-cell/) |
 | **Awesome Spatial Omics Niche** | Every method defines "niche" differently. This list tells you how. | [GitHub](https://github.com/LiudengZhang/awesome-spatial-omics-niche) · [Site](https://liudengzhang.github.io/awesome-spatial-omics-niche/) |
 | **Awesome Pan-Cancer Phosphoproteomics** | Without knowing which kinase, which pathway, and which drug, a phosphosite catalog is not a map. | [GitHub](https://github.com/LiudengZhang/awesome-pan-cancer-phosphoproteomics) · [Site](https://liudengzhang.github.io/awesome-pan-cancer-phosphoproteomics/) |
+| **Awesome Spatial Omics** | Spatial omics has more tools than any analyst can evaluate. This list organizes them by question and technology. | [GitHub](https://github.com/LiudengZhang/awesome-spatial-omics) · [Site](https://liudengzhang.github.io/awesome-spatial-omics/) |
 
 ## Installation
 
