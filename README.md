@@ -47,6 +47,7 @@ Claude Code will automatically detect and use the skill when you ask it to build
 - **Honest assessments**: Entry descriptions include limitations alongside strengths. No marketing copy.
 - **Coverage verification**: Cross-reference against benchmarks, existing lists, review papers, and citation counts before publishing.
 - **README = index, site = depth**: The awesome list provides the curated index; the companion site adds concept pages, method comparisons, and paper analyses that the README format cannot support.
+- **Inline review**: Every companion site ships with [Hypothesis](https://web.hypothes.is/) for inline text annotation — select any sentence and leave a comment, just like Google Docs.
 
 ## License
 

@@ -160,6 +160,9 @@ theme:
     - content.tabs.link
     - toc.integrate
 
+extra_javascript:
+  - https://hypothes.is/embed.js
+
 plugins:
   - search
   - tags
@@ -453,6 +456,28 @@ gh api repos/{GITHUB_USER}/{REPO_NAME}/pages/builds/latest \
 ```
 
 **GitHub Pages gotcha:** `mkdocs gh-deploy --force` pushes to the `gh-pages` branch. Pages must be configured for `legacy` build type with `gh-pages` as source branch. If set to `workflow` mode, the site will 404.
+
+---
+
+## Inline Review with Hypothesis
+
+The mkdocs.yml template includes [Hypothesis](https://web.hypothes.is/) for inline text annotation — select any word or sentence on the deployed site and leave a comment, just like in Google Docs or Word.
+
+**How it works:**
+1. Visit any page on the deployed companion site
+2. Select text → click "Annotate" in the tooltip
+3. Type your comment (first time requires a free Hypothesis account)
+4. Set visibility to "Only Me" for private review notes
+
+**Checking annotations programmatically:**
+```bash
+# Fetch all public annotations for a page
+curl -s "https://hypothes.is/api/search?uri=https://{GITHUB_USER}.github.io/{REPO_NAME}/{page}/" | python3 -m json.tool
+```
+
+**When to use:** After Phase 6 deploy, review the live site page by page. Hypothesis annotations serve as inline TODO items — "reword this", "add citation", "verify claim" — anchored to the exact text that needs attention.
+
+**To remove:** Delete the `extra_javascript` line from `mkdocs.yml` and redeploy. No content is affected.
 
 ---
 
